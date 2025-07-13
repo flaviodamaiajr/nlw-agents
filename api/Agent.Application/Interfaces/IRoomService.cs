@@ -6,5 +6,6 @@ namespace Agent.Application.Interfaces
     {
         Task<RoomDTO> CreateAsync(CreateRoomDTO createRoomRequest);
         Task<ICollection<RoomDTO>> GetAllAsync();
+        Task<CreateRoomQuestionsDTO> CreateQuestionAsync(Guid roomId, string question);
     }
 }

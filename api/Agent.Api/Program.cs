@@ -17,11 +17,13 @@ builder.Services.AddFastEndpoints();
 
 // Register Services
 builder.Services.AddScoped<IRoomService, RoomService>();
+builder.Services.AddScoped<IRoomQuestionService, RoomQuestionService>();
+
 builder.Services.AddScoped<IRoomRepository, RoomRepository>();
+builder.Services.AddScoped<IRoomQuestionRepository, RoomQuestionRepository>();
 
 builder.Services.AddDbContext<AgentDbContext>(options =>
     options.UseInMemoryDatabase("AppDb"));
-
 
 var app = builder.Build();
 

@@ -6,7 +6,7 @@
         public string Description { get; private set; } = null!;
         public IList<RoomQuestion>? RoomQuestions { get; private set; }
 
-        protected Room() { }
+        public Room() { }
 
         public Room(string name, string description)
         {

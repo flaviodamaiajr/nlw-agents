@@ -15,12 +15,13 @@ Content-Type: application/json
 
 ### Create Questions
 
-POST {{Agent.Api_HostAddress}}/api/rooms/1/question
+POST {{Agent.Api_HostAddress}}/api/rooms/3b4efd95-2caf-413a-9e7d-92109b06d4e2/question
 Accept: application/json
 Content-Type: application/json
 
 {
- "Teste" : "aaa"
+ "RoomId" : "3b4efd95-2caf-413a-9e7d-92109b06d4e2",
+ "Question": "Which kind of surfboards are recommended for daily use?"
 }
 
 ###

@@ -2,6 +2,8 @@
 {
     public class CreateQuestionRequest
     {
-        public string Teste { get; set; }
+        public Guid RoomId { get; set; }
+        public string Question { get; set; } = null!;
+
     }
 }
