@@ -1,0 +1,26 @@
+@Agent.Api_HostAddress = http://localhost:5126
+
+POST {{Agent.Api_HostAddress}}/api/room/create
+Accept: application/json
+Content-Type: application/json
+
+{
+  "Name": "Room 01",
+  "Description": "Surf Session"
+}
+###
+POST {{Agent.Api_HostAddress}}/api/room/list
+Accept: application/json
+Content-Type: application/json
+
+### Create Questions
+
+POST {{Agent.Api_HostAddress}}/api/rooms/1/question
+Accept: application/json
+Content-Type: application/json
+
+{
+ "Teste" : "aaa"
+}
+
+###
