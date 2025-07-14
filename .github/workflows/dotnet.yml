@@ -19,7 +19,8 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Restore dependencies
-        run: dotnet restore ./api
+        run: dotnet restore ./api/Agent.Api.sln
 
       - name: Build
-        run: dotnet build ./api --no-restore
+        run: dotnet build ./api/Agent.Api.sln --no-restore
+
